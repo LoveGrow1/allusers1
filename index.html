@@ -21,14 +21,10 @@
     margin-bottom: 5px;
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 48%; /* Adjusted to account for a gap between boxes */
     background-color: #666666; /* Slightly darker gray */
     color: white; /* White text and icon */
-    margin-right: 2.5%; /* half of the remaining 10% for spacing */
-  }
-
-  .btn:last-child {
-    margin-right: 0; /* remove margin from the second box */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
   .btn-group-center {
@@ -45,7 +41,7 @@
   .box-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px; /* add space between rows */
+    width: 100%; /* Ensure the width matches the top box */
   }
 </style>
 </head>
