@@ -41,24 +41,9 @@
     height: auto;
   }
 </style>
-<script type="text/javascript">
-  function checkPassword() {
-    if (sessionStorage.getItem("authenticated") === "true") {
-      document.getElementById('protectedContent').style.display = 'block';
-    } else {
-      var password = prompt("Please enter password to view this page", "");
-      if (password == "1234") {
-        document.getElementById('protectedContent').style.display = 'block';
-        sessionStorage.setItem("authenticated", "true");
-      } else {
-        alert("Incorrect password. Please try again.")
-      }
-    }
-  }
-</script>
 </head>
-<body onload="checkPassword()">
-<div id="protectedContent" style="display:none">
+<body>
+<div id="protectedContent">
 <div class="container">
   <div class="jumbotron text-center">
     <img src="Logo LG.png" alt="LoveGrow Logo" class="logo">
