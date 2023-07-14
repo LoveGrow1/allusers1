@@ -24,10 +24,11 @@
     width: 45%;
     background-color: #666666; /* Slightly darker gray */
     color: white; /* White text and icon */
+    margin-right: 2.5%; /* half of the remaining 10% for spacing */
   }
 
-  .btn i {
-    margin-right: 5px;
+  .btn:last-child {
+    margin-right: 0; /* remove margin from the second box */
   }
 
   .btn-group-center {
@@ -39,6 +40,12 @@
   .logo {
     max-width: 30%;
     height: auto;
+  }
+
+  .box-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* add space between rows */
   }
 </style>
 </head>
@@ -61,7 +68,7 @@
         <!-- Adjust the font-size and padding for text size and spacing within the box -->
         <!-- Repeat the following block of code for each set of boxes -->
         <!-- One set of boxes -->
-        <div>
+        <div class="box-row">
           <a href="#" class="btn btn-lg"><i class="bi bi-person-fill"></i></a> <!-- Box 1 -->
           <a href="#" class="btn btn-lg"><i class="bi bi-person-fill"></i></a> <!-- Box 2 -->
         </div>
