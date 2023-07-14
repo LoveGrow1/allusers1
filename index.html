@@ -15,6 +15,27 @@
     font-size: 18px;
   }
 
+  .btn {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    background-color: #666666; /* Slightly darker gray */
+    color: white; /* White text and icon */
+  }
+
+  .btn i {
+    margin-right: 5px;
+  }
+
+  .btn-group-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .logo {
     max-width: 30%;
     height: auto;
@@ -28,6 +49,26 @@
     <img src="Logo LG.png" alt="LoveGrow Logo" class="logo">
     <p class="lead"><strong>Select your user ID to see your insights</strong></p>
     <p>Please select your user ID followed by the letter F if you're a female or by the letter M if you're a male. For example, a female with the user ID 12345678 should select 12345678F.</p>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="btn-group-vertical btn-group-center">
+        <!-- Add 20 sets of 2 boxes -->
+        <!-- The href can be modified to link to different pages or actions -->
+        <!-- The bi-person-fill icon can be replaced with the appropriate Bootstrap icon -->
+        <!-- Adjust the width to get the right amount of space between boxes -->
+        <!-- Adjust the background-color to the desired shade of gray -->
+        <!-- Adjust the font-size and padding for text size and spacing within the box -->
+        <!-- Repeat the following block of code for each set of boxes -->
+        <!-- One set of boxes -->
+        <div>
+          <a href="#" class="btn btn-lg"><i class="bi bi-person-fill"></i></a> <!-- Box 1 -->
+          <a href="#" class="btn btn-lg"><i class="bi bi-person-fill"></i></a> <!-- Box 2 -->
+        </div>
+        <!-- Repeat 19 more times -->
+        <!-- ... -->
+      </div>
+    </div>
   </div>
 </div>
 </div>
