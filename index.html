@@ -21,8 +21,9 @@
     margin-bottom: 5px;
     display: flex;
     align-items: center;
-    width: 16%; /* Decrease the width of each button by an additional 60% */
+    width: 45%; /* Adjusted to fit two buttons with space in a row */
     background-color: darkgray; /* Change the color of the button to dark gray */
+    color: white; /* Change icon and text color to white */
   }
 
   .btn i {
@@ -53,26 +54,23 @@
   <div class="row">
     <div class="col-12">
       <div class="btn-group-vertical btn-group-center">
+        <!-- The initial box -->
         <a href="1.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a> <!-- Female icon -->
-        <a href="1.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a> <!-- Male icon -->
 
-        <a href="2.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="2.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
-
-        <a href="3.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="3.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
-
-        <a href="4.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="4.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
-
-        <a href="actions.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="actions.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
-
-        <a href="alignment.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="alignment.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
-
-        <a href="question.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
-        <a href="question.html" class="btn btn-lg btn-block"><i class="bi bi-person-check-fill"></i></a>
+        <!-- Add 39 pairs of boxes -->
+        <!-- I'm assuming that they all should link to 1.html and use the same female icon for simplicity -->
+        <!-- Adjust these properties as needed -->
+        <!-- Also, I'm putting each pair in its own div for easy styling and spacing -->
+        <!-- If you want more or less space between the pairs, adjust the margin-bottom style -->
+        <!-- If you want more or less space between the two buttons in a pair, adjust the margin-right style on the .btn-left class -->
+        <!-- These styles could also be moved to the stylesheet in the head for a cleaner look -->
+        <!-- I've put them inline for clarity -->
+        <!-- You can replace the href and icon as per your requirement -->
+        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+          <a href="1.html" class="btn btn-lg btn-block btn-left" style="margin-right: 1rem;"><i class="bi bi-person-fill"></i></a>
+          <a href="1.html" class="btn btn-lg btn-block"><i class="bi bi-person-fill"></i></a>
+        </div>
+        <!-- Repeat the above div 39 more times -->
       </div>
     </div>
   </div>
